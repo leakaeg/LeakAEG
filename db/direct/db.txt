@@ -1,0 +1,9 @@
+Cache : kmalloc-64, Area : 8-64, file : leak_64.h
+Cache : kmalloc-96, Area : 8-96, file : leak_96.h
+Cache : kmalloc-128, Area : 8-128, file : leak_128.h
+Cache : kmalloc-256, Area : 8-256, file : leak_256.h
+Cache : kmalloc-512, Area : 8-512, file : leak_512.h
+Cache : kmalloc-1024, Area : 0-704, file : leak_1024.h
+Cache : kmalloc-2048, Area : 0-1980, file : leak_2048.h
+Cache : kmalloc-4096, Area : 0-3760, file : leak_4096.h
+Cache : kmalloc-8192, Area : 0-7872, file : leak_8192.h

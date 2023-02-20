@@ -1,0 +1,11 @@
+--- gcc-7.5.0/gcc/asan.c	2017-11-21 16:00:26.142375000 +0000
++++ gcc-7.5.0/gcc/asan.c	2020-07-27 10:00:26.873115258 +0000
+@@ -1809,7 +1809,7 @@
+ 						 align / BITS_PER_UNIT));
+   gimple_set_location (g, loc);
+   if (before_p)
+-    gsi_insert_before (&gsi, g, GSI_SAME_STMT);
++    gsi_insert_after (&gsi, g, GSI_SAME_STMT);
+   else
+     {
+       gsi_insert_after (&gsi, g, GSI_NEW_STMT);

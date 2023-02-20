@@ -1,0 +1,6 @@
+# Debug info for symbolization.
+CONFIG_DEBUG_INFO=y
+
+# Required for Debian Stretch
+CONFIG_CONFIGFS_FS=y
+CONFIG_SECURITYFS=y

@@ -1,0 +1,712 @@
+qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+early console in extract_kernel
+input_data: 0x00000000048b3276
+input_len: 0x0000000001679b08
+output: 0x0000000001000000
+output_len: 0x0000000004c06bf4
+kernel_total_size: 0x0000000004f5c000
+booted via startup_32()
+Physical KASLR using RDTSC...
+Virtual KASLR using RDTSC...
+
+Decompressing Linux... Parsing ELF... Performing relocations... done.
+Booting the kernel.
+[    0.000000] Linux version 4.15.0+ (yoochan@vayne) (gcc version 7.5.0 (GCC)) #13 SMP Thu Jan 12 15:16:50 KST 2023
+[    0.000000] Command line: console=ttyS0 root=/dev/sda earlyprintk=serial net.ifnames=0
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ffdffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007ffe0000-0x000000007fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] bootconsole [earlyser0] enabled
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] random: fast init done
+[    0.000000] SMBIOS 2.8 present.
+[    0.000000] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] e820: last_pfn = 0x7ffe0 max_arch_pfn = 0x400000000
+[    0.000000] x86/PAT: PAT not supported by CPU.
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000000] found SMP MP-table at [mem 0x000f6a80-0x000f6a8f] mapped at [        (ptrval)]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000F6860 000014 (v00 BOCHS )
+[    0.000000] ACPI: RSDT 0x000000007FFE1656 000030 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACP 0x000000007FFE14AA 000074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000007FFE0040 00146A (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACS 0x000000007FFE0000 000040
+[    0.000000] ACPI: APIC 0x000000007FFE159E 000080 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+[    0.000000] ACPI: HPET 0x000000007FFE161E 000038 (v01 BOCHS  BXPCHPET 00000001 BXPC 00000001)
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000007ffdffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x7ffdc000-0x7ffdffff]
+[    0.000000] kvm-clock: cpu 0, msr 0:7ffda001, primary cpu clock
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: using sched offset of 459916993 cycles
+[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x000000007ffdffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x000000007ffdffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000007ffdffff]
+[    0.000000] Reserved but unavailable: 98 pages
+[    0.000000] kasan: KernelAddressSanitizer initialized
+[    0.000000] ACPI: PM-Timer IO Port: 0x608
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.000000] e820: [mem 0x80000000-0xfeffbfff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on KVM
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.000000] setup_percpu: NR_CPUS:64 nr_cpumask_bits:64 nr_cpu_ids:2 nr_node_ids:1
+[    0.000000] percpu: Embedded 52 pages/cpu @        (ptrval) s174744 r8192 d30056 u1048576
+[    0.000000] KVM setup async PF for cpu 0
+[    0.000000] kvm-stealtime: cpu 0, msr 6d21e2c0
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 515945
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: console=ttyS0 root=/dev/sda earlyprintk=serial net.ifnames=0
+[    0.000000] Memory: 1708252K/2096632K available (47116K kernel code, 5557K rwdata, 6176K rodata, 2008K init, 9140K bss, 388380K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Kernel/User page tables isolation: enabled
+[    0.001000] Hierarchical RCU implementation.
+[    0.001000] 	RCU event tracing is enabled.
+[    0.001000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=2.
+[    0.001000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.001000] NR_IRQS: 4352, nr_irqs: 440, preallocated irqs: 16
+[    0.001000] Console: colour VGA+ 80x25
+[    0.001000] console [ttyS0] enabled
+[    0.001000] console [ttyS0] enabled
+[    0.001000] bootconsole [earlyser0] disabled
+[    0.001000] bootconsole [earlyser0] disabled
+[    0.001000] ACPI: Core revision 20170831
+[    0.001000] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.001000] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.001027] APIC: Switch to symmetric I/O mode setup
+[    0.002275] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.002682] tsc: Detected 2099.998 MHz processor
+[    0.003016] Calibrating delay loop (skipped) preset value.. 4199.99 BogoMIPS (lpj=2099998)
+[    0.003549] pid_max: default: 32768 minimum: 301
+[    0.003911] Security Framework initialized
+[    0.004009] SELinux:  Initializing.
+[    0.005040] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.005889] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.006031] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.006473] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.007648] CPU: Physical Processor ID: 0
+[    0.008024] mce: CPU supports 10 MCE banks
+[    0.008350] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.008701] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.009004] Spectre V2 mitigation: Mitigation: Full generic retpoline
+[    0.010143] Freeing SMP alternatives memory: 40K
+[    0.013000] smpboot: CPU0: Intel QEMU Virtual CPU version 2.5+ (family: 0x6, model: 0x6, stepping: 0x3)
+[    0.013000] Performance Events: PMU not available due to virtualization, using software events only.
+[    0.013672] Hierarchical SRCU implementation.
+[    0.014276] smp: Bringing up secondary CPUs ...
+[    0.015080] x86: Booting SMP configuration:
+[    0.015376] .... node  #0, CPUs:      #1
+[    0.001000] kvm-clock: cpu 1, msr 0:7ffda041, secondary cpu clock
+[    0.020044] KVM setup async PF for cpu 1
+[    0.020551] kvm-stealtime: cpu 1, msr 6d31e2c0
+[    0.021016] smp: Brought up 1 node, 2 CPUs
+[    0.022009] smpboot: Max logical packages: 2
+[    0.022290] smpboot: Total of 2 processors activated (8399.99 BogoMIPS)
+[    0.023242] devtmpfs: initialized
+[    0.028363] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.028309] kworker/u4:0 (20) used greatest stack depth: 25520 bytes left
+[    0.029463] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.030237] RTC time:  7:01:57, date: 01/12/23
+[    0.030996] NET: Registered protocol family 16
+[    0.031837] audit: initializing netlink subsys (disabled)
+[    0.032314] audit: type=2000 audit(1673506917.375:1): state=initialized audit_enabled=0 res=1
+[    0.033632] kworker/u4:0 (32) used greatest stack depth: 24480 bytes left
+[    0.034175] cpuidle: using governor menu
+[    0.035262] ACPI: bus type PCI registered
+[    0.036028] PCI: Using configuration type 1 for base access
+[    0.036665] kworker/u4:0 (37) used greatest stack depth: 23528 bytes left
+[    0.072008] kworker/u4:2 (477) used greatest stack depth: 23400 bytes left
+[    0.073462] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.074372] ACPI: Added _OSI(Module Device)
+[    0.074656] ACPI: Added _OSI(Processor Device)
+[    0.075329] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.075647] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.085036] ACPI: Interpreter enabled
+[    0.085402] ACPI: (supports S0 S3 S4 S5)
+[    0.085661] ACPI: Using IOAPIC for interrupt routing
+[    0.086077] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.088034] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    0.132606] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.133027] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    0.133548] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+[    0.134109] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.135203] PCI host bridge to bus 0000:00
+[    0.135516] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.135975] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.136009] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.136517] pci_bus 0000:00: root bus resource [mem 0x80000000-0xfebfffff window]
+[    0.137008] pci_bus 0000:00: root bus resource [mem 0x100000000-0x17fffffff window]
+[    0.137508] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.143522] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.144005] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.144545] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.145003] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.147396] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+[    0.147970] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+[    0.169393] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+[    0.170798] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+[    0.172177] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+[    0.173540] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+[    0.174339] ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+[    0.176574] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.176574] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.177010] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.178004] vgaarb: loaded
+[    0.179260] SCSI subsystem initialized
+[    0.179980] ACPI: bus type USB registered
+[    0.180125] usbcore: registered new interface driver usbfs
+[    0.180571] usbcore: registered new interface driver hub
+[    0.181044] usbcore: registered new device driver usb
+[    0.181521] pps_core: LinuxPPS API ver. 1 registered
+[    0.182005] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.182758] PTP clock support registered
+[    0.183147] EDAC MC: Ver: 3.0.0
+[    0.184241] Advanced Linux Sound Architecture Driver Initialized.
+[    0.184786] PCI: Using ACPI for IRQ routing
+[    0.186178] NetLabel: Initializing
+[    0.186439] NetLabel:  domain hash size = 128
+[    0.186760] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.187116] NetLabel:  unlabeled traffic allowed by default
+[    0.188107] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+[    0.188650] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.189004] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    0.191035] clocksource: Switched to clocksource kvm-clock
+[    0.259481] VFS: Disk quotas dquot_6.6.0
+[    0.259833] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.260596] pnp: PnP ACPI init
+[    0.264847] pnp: PnP ACPI: found 6 devices
+[    0.275503] kworker/u4:0 (665) used greatest stack depth: 21984 bytes left
+[    0.285185] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.286220] NET: Registered protocol family 2
+[    0.287312] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.287924] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+[    0.288504] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.289287] UDP hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.289715] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.290326] NET: Registered protocol family 1
+[    0.290950] RPC: Registered named UNIX socket transport module.
+[    0.291354] RPC: Registered udp transport module.
+[    0.291659] RPC: Registered tcp transport module.
+[    0.291963] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.292775] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.293192] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    0.293583] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.294051] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.296412] Scanning for low memory corruption every 60 seconds
+[    0.298600] Initialise system trusted keyrings
+[    0.299129] workingset: timestamp_bits=56 max_order=19 bucket_order=0
+[    0.316930] NFS: Registering the id_resolver key type
+[    0.317355] Key type id_resolver registered
+[    0.317693] Key type id_legacy registered
+[    0.318257] 9p: Installing v9fs 9p2000 file system support
+[    0.321900] Key type asymmetric registered
+[    0.322271] Asymmetric key parser 'x509' registered
+[    0.322753] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.323250] io scheduler noop registered
+[    0.323518] io scheduler deadline registered
+[    0.324023] io scheduler cfq registered (default)
+[    0.324362] io scheduler mq-deadline registered
+[    0.324681] io scheduler kyber registered
+[    0.326204] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.326747] ACPI: Power Button [PWRF]
+[    0.328790] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.351767] 00:05: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.354662] Non-volatile memory driver v1.3
+[    0.355099] Linux agpgart interface v0.103
+[    0.365538] loop: module loaded
+[    0.365884] Loading iSCSI transport class v2.0-870.
+[    0.369537] scsi host0: ata_piix
+[    0.370440] scsi host1: ata_piix
+[    0.370955] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc040 irq 14
+[    0.371458] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc048 irq 15
+[    0.372260] enic: Cisco VIC Ethernet NIC Driver, ver 2.3.0.45
+[    0.372715] e100: Intel(R) PRO/100 Network Driver, 3.5.24-k2-NAPI
+[    0.373119] e100: Copyright(c) 1999-2006 Intel Corporation
+[    0.373535] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    0.373988] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    0.530926] ata1.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[    0.532917] ata1.00: 4194304 sectors, multi 16: LBA48 
+[    0.534962] ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[    0.536146] ata2.00: configured for MWDMA2
+[    0.537119] ata1.00: configured for MWDMA2
+[    0.538152] scsi 0:0:0:0: Direct-Access     ATA      QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+[    0.540929] sd 0:0:0:0: [sda] 4194304 512-byte logical blocks: (2.15 GB/2.00 GiB)
+[    0.541919] sd 0:0:0:0: [sda] Write Protect is off
+[    0.542665] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    0.544231] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    0.545899] scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+[    0.551760] sd 0:0:0:0: [sda] Attached SCSI disk
+[    0.560587] sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[    0.561514] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    0.563852] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[    1.312048] tsc: Refined TSC clocksource calibration: 2100.032 MHz
+[    1.312454] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1e454ea3a5b, max_idle_ns: 440795223349 ns
+[    1.393790] ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 11
+[    1.700581] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[    1.701332] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[    1.701895] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    1.702292] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.702795] sky2: driver version 1.30
+[    1.703369] PPP generic driver version 2.4.2
+[    1.703963] PPP BSD Compression module registered
+[    1.704301] PPP Deflate Compression module registered
+[    1.704635] NET: Registered protocol family 24
+[    1.705342] mac80211_hwsim: initializing netlink
+[    1.709845] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.710322] ehci-pci: EHCI PCI platform driver
+[    1.710676] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.711114] ohci-pci: OHCI PCI platform driver
+[    1.711456] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.712112] usbcore: registered new interface driver usblp
+[    1.712600] usbcore: registered new interface driver usb-storage
+[    1.713244] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    1.714586] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.715014] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.716400] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[    1.718732] rtc_cmos 00:00: RTC can wake from S4
+[    1.719527] rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+[    1.720144] rtc_cmos 00:00: alarms up to one day, y3k, 114 bytes nvram, hpet irqs
+[    1.721853] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[    1.723067] usnic_verbs: Cisco VIC (USNIC) Verbs Driver v1.0.3 (December 19, 2013)
+[    1.723667] usnic_verbs:usnic_uiom_init:585: 
+[    1.723669] IOMMU required but not present or enabled.  USNIC QPs will not function w/o enabling IOMMU
+[    1.724787] usnic_verbs:usnic_ib_init:666: 
+[    1.724788] Unable to initalize umem with err -1
+[    1.725868] iscsi: registered transport (iser)
+[    1.726238] OPA Virtual Network Driver - v1.0
+[    1.726692] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.728177] usbcore: registered new interface driver usbhid
+[    1.728628] usbhid: USB HID core driver
+[    1.730335] Netfilter messages via NETLINK v0.30.
+[    1.730931] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    1.731605] ctnetlink v0.93: registering with nfnetlink.
+[    1.732223] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.732893] Initializing XFRM netlink socket
+[    1.734328] NET: Registered protocol family 10
+[    1.736179] Segment Routing with IPv6
+[    1.736527] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    1.737467] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.738578] NET: Registered protocol family 17
+[    1.739345] RPC: Registered rdma transport module.
+[    1.739724] RPC: Registered rdma backchannel transport module.
+[    1.744433] DCCP: Activated CCID 2 (TCP-like)
+[    1.744988] DCCP: Activated CCID 3 (TCP-Friendly Rate Control)
+[    1.746217] 9pnet: Installing 9P2000 support
+[    1.746617] Key type dns_resolver registered
+[    1.747612] sched_clock: Marking stable (1747457101, 0)->(2375863066, -628405965)
+[    1.748881] registered taskstats version 1
+[    1.749227] Loading compiled-in X.509 certificates
+[    1.750085]   Magic number: 7:571:15
+[    1.750430] console [netcon0] enabled
+[    1.750706] netconsole: network logging started
+[    1.751364] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    1.753381] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    1.753896] ALSA device list:
+[    1.754190]   No soundcards found.
+[    1.754851] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    1.755536] cfg80211: failed to load regulatory.db
+[    2.339012] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input3
+[    2.342910] md: Waiting for all devices to be available before autodetect
+[    2.343666] md: If you don't use raid, use raid=noautodetect
+[    2.345286] md: Autodetecting RAID arrays.
+[    2.345712] md: autorun ...
+[    2.346043] md: ... autorun DONE.
+[    2.347390] EXT4-fs (sda): couldn't mount as ext3 due to feature incompatibilities
+[    2.348916] EXT4-fs (sda): couldn't mount as ext2 due to feature incompatibilities
+[    2.351000] EXT4-fs (sda): INFO: recovery required on readonly filesystem
+[    2.351699] EXT4-fs (sda): write access will be enabled during recovery
+[    2.374511] EXT4-fs (sda): recovery complete
+[    2.375618] EXT4-fs (sda): mounted filesystem with ordered data mode. Opts: (null)
+[    2.376182] VFS: Mounted root (ext4 filesystem) readonly on device 8:0.
+[    2.377151] devtmpfs: mounted
+[    2.381608] Freeing unused kernel memory: 2008K
+[    2.381929] Write protecting the kernel read-only data: 57344k
+[    2.384269] Freeing unused kernel memory: 2008K
+[    2.397658] Freeing unused kernel memory: 2016K
+[    2.931839] SELinux:  Permission getrlimit in class process not defined in policy.
+[    2.932337] SELinux:  Class process2 not defined in policy.
+[    2.932704] SELinux:  Permission map in class file not defined in policy.
+[    2.933135] SELinux:  Permission map in class dir not defined in policy.
+[    2.933555] SELinux:  Permission map in class lnk_file not defined in policy.
+[    2.933999] SELinux:  Permission map in class chr_file not defined in policy.
+[    2.934446] SELinux:  Permission map in class blk_file not defined in policy.
+[    2.934929] SELinux:  Permission map in class sock_file not defined in policy.
+[    2.935405] SELinux:  Permission map in class fifo_file not defined in policy.
+[    2.935874] SELinux:  Permission map in class socket not defined in policy.
+[    2.936327] SELinux:  Permission map in class tcp_socket not defined in policy.
+[    2.936780] SELinux:  Permission map in class udp_socket not defined in policy.
+[    2.937235] SELinux:  Permission map in class rawip_socket not defined in policy.
+[    2.937702] SELinux:  Permission map in class netlink_socket not defined in policy.
+[    2.938178] SELinux:  Permission map in class packet_socket not defined in policy.
+[    2.938676] SELinux:  Permission map in class key_socket not defined in policy.
+[    2.939166] SELinux:  Permission map in class unix_stream_socket not defined in policy.
+[    2.939690] SELinux:  Permission map in class unix_dgram_socket not defined in policy.
+[    2.940213] SELinux:  Permission map in class netlink_route_socket not defined in policy.
+[    2.940719] SELinux:  Permission map in class netlink_tcpdiag_socket not defined in policy.
+[    2.941235] SELinux:  Permission map in class netlink_nflog_socket not defined in policy.
+[    2.941736] SELinux:  Permission map in class netlink_xfrm_socket not defined in policy.
+[    2.942236] SELinux:  Permission map in class netlink_selinux_socket not defined in policy.
+[    2.942782] SELinux:  Permission map in class netlink_iscsi_socket not defined in policy.
+[    2.943335] SELinux:  Permission map in class netlink_audit_socket not defined in policy.
+[    2.943921] SELinux:  Permission map in class netlink_fib_lookup_socket not defined in policy.
+[    2.944657] SELinux:  Permission map in class netlink_connector_socket not defined in policy.
+[    2.945347] SELinux:  Permission map in class netlink_netfilter_socket not defined in policy.
+[    2.946011] SELinux:  Permission map in class netlink_dnrt_socket not defined in policy.
+[    2.946656] SELinux:  Permission map in class netlink_kobject_uevent_socket not defined in policy.
+[    2.947375] SELinux:  Permission map in class netlink_generic_socket not defined in policy.
+[    2.948050] SELinux:  Permission map in class netlink_scsitransport_socket not defined in policy.
+[    2.948735] SELinux:  Permission map in class netlink_rdma_socket not defined in policy.
+[    2.949367] SELinux:  Permission map in class netlink_crypto_socket not defined in policy.
+[    2.950022] SELinux:  Permission map in class appletalk_socket not defined in policy.
+[    2.950653] SELinux:  Permission map in class dccp_socket not defined in policy.
+[    2.951255] SELinux:  Permission map in class tun_socket not defined in policy.
+[    2.951854] SELinux:  Class sctp_socket not defined in policy.
+[    2.952328] SELinux:  Class icmp_socket not defined in policy.
+[    2.952773] SELinux:  Class ax25_socket not defined in policy.
+[    2.953224] SELinux:  Class ipx_socket not defined in policy.
+[    2.953665] SELinux:  Class netrom_socket not defined in policy.
+[    2.954126] SELinux:  Class atmpvc_socket not defined in policy.
+[    2.954611] SELinux:  Class x25_socket not defined in policy.
+[    2.955068] SELinux:  Class rose_socket not defined in policy.
+[    2.955554] SELinux:  Class decnet_socket not defined in policy.
+[    2.956046] SELinux:  Class atmsvc_socket not defined in policy.
+[    2.956514] SELinux:  Class rds_socket not defined in policy.
+[    2.956962] SELinux:  Class irda_socket not defined in policy.
+[    2.957415] SELinux:  Class pppox_socket not defined in policy.
+[    2.957870] SELinux:  Class llc_socket not defined in policy.
+[    2.958322] SELinux:  Class can_socket not defined in policy.
+[    2.958795] SELinux:  Class tipc_socket not defined in policy.
+[    2.959272] SELinux:  Class bluetooth_socket not defined in policy.
+[    2.959768] SELinux:  Class iucv_socket not defined in policy.
+[    2.960234] SELinux:  Class rxrpc_socket not defined in policy.
+[    2.960687] SELinux:  Class isdn_socket not defined in policy.
+[    2.961137] SELinux:  Class phonet_socket not defined in policy.
+[    2.961610] SELinux:  Class ieee802154_socket not defined in policy.
+[    2.962105] SELinux:  Class caif_socket not defined in policy.
+[    2.962557] SELinux:  Class alg_socket not defined in policy.
+[    2.963042] SELinux:  Class nfc_socket not defined in policy.
+[    2.963508] SELinux:  Class vsock_socket not defined in policy.
+[    2.963990] SELinux:  Class kcm_socket not defined in policy.
+[    2.964441] SELinux:  Class qipcrtr_socket not defined in policy.
+[    2.964919] SELinux:  Class smc_socket not defined in policy.
+[    2.965371] SELinux:  Class infiniband_pkey not defined in policy.
+[    2.965867] SELinux:  Class infiniband_endport not defined in policy.
+[    2.966371] SELinux:  Class bpf not defined in policy.
+[    2.966788] SELinux: the above unknown classes and permissions will be allowed
+[    2.967444] SELinux:  policy capability network_peer_controls=1
+[    2.967932] SELinux:  policy capability open_perms=1
+[    2.968322] SELinux:  policy capability extended_socket_class=0
+[    2.968793] SELinux:  policy capability always_check_network=0
+[    2.969248] SELinux:  policy capability cgroup_seclabel=0
+[    2.969662] SELinux:  policy capability nnp_nosuid_transition=0
+[    3.003602] audit: type=1403 audit(1673506920.346:2): policy loaded auid=4294967295 ses=4294967295
+[    3.006953] systemd[1]: Successfully loaded SELinux policy in 539.561ms.
+[    3.017029] audit: type=1400 audit(1673506920.359:3): avc:  denied  { associate } for  pid=1 comm="systemd" name="pts" scontext=system_u:object_r:devpts_t:s0 tcontext=system_u:object_r:device_t:s0 tclass=filesystem permissive=1
+[    3.029089] systemd[1]: Relabelled /dev and /run in 8.898ms.
+[    3.041310] systemd[1]: systemd 232 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+[    3.042745] systemd[1]: Detected virtualization qemu.
+[    3.043101] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mDebian GNU/Linux 9 (stretch)[0m!
+
+[    3.044899] systemd[1]: Set hostname to <syzkaller>.
+[    3.084937] systemd-debug-g (1252) used greatest stack depth: 20296 bytes left
+[    3.101266] systemd-hiberna (1253) used greatest stack depth: 20216 bytes left
+[    3.107558] systemd-sysv-ge (1251) used greatest stack depth: 18584 bytes left
+[    3.163126] systemd[1]: Reached target Remote File Systems.
+[[0;32m  OK  [0m] Reached target Remote File Systems.
+[    3.167089] systemd[1]: Listening on Journal Socket.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+[    3.169206] systemd[1]: Listening on Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[    3.170770] systemd[1]: Listening on Syslog Socket.
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+[    3.172709] systemd[1]: Listening on udev Control Socket.
+[[0;32m  OK  [0m] Listening on udev Control Socket.
+[    3.174169] systemd[1]: Created slice System Slice.
+[[0;32m  OK  [0m] Created slice System Slice.
+[[0;32m  OK  [0m] Created slice system-getty.slice.
+         Starting Remount Root and Kernel File Systems...
+[[0;32m  OK  [0m] Reached target Slices.
+         Mounting /sys/kernel/debug...
+         Mounting POSIX Message Queue File System...
+         Starting Load Kernel Modules...
+[    3.187699] audit: type=1400 audit(1673506920.530:4): avc:  denied  { audit_read } for  pid=1 comm="systemd" capability=37  scontext=system_u:system_r:kernel_t:s0 tcontext=system_u:system_r:kernel_t:s0 tclass=capability2 permissive=1
+[[0;32m  OK  [0m] Listening on Journal Audit Socket.
+         Starting Create Static Device Nodes in /dev...
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+         Starting Journal Service...
+[[0;32m  OK  [0m] Listening on udev Kernel Socket.
+[[0;32m  OK  [0m] Reached target Sockets.
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
+         Mounting /proc/sys/fs/binfmt_misc...
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Reached target Swap.
+         Mounting /sys/kernel/config...
+[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Reached target Paths.
+[[0;32m  OK  [0m] Reached target Encrypted Volumes.
+[[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
+[[0;32m  OK  [0m] Mounted /sys/kernel/debug.
+[[0;32m  OK  [0m] Mounted /sys/kernel/config.
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+[[0;32m  OK  [0m] Mounted /proc/sys/fs/binfmt_misc.
+[    3.233875] EXT4-fs (sda): re-mounted. Opts: (null)
+         Starting Apply Kernel Variables...
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+         Starting udev Coldplug all Devices...
+         Starting Load/Save Random Seed...
+[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Reached target Local File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Local File Systems.
+         Starting udev Kernel Device Manager...
+[[0;32m  OK  [0m] Started Apply Kernel Variables.
+[[0;32m  OK  [0m] Started Load/Save Random Seed.
+         Starting Raise network interfaces...
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Started Journal Service.
+         Starting Flush Journal to Persistent Storage...
+[    3.536733] audit: type=1107 audit(1673506920.879:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:kernel_t:s0 msg='avc:  denied  { stop } for auid=n/a uid=0 gid=0 path="/lib/systemd/system/systemd-journald.service" cmdline="/bin/journalctl --flush" scontext=system_u:system_r:kernel_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=service
+[    3.536733]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[    3.541228] systemd-journald[1263]: Received request to flush runtime journal from PID 1
+[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
+         Starting Create Volatile Files and Directories...
+[[0;32m  OK  [0m] Started Create Volatile Files and Directories.
+         Starting Network Time Synchronization...
+         Starting Update UTMP about System Boot/Shutdown...
+[[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[0;32m  OK  [0m] Started Network Time Synchronization.
+[[0;32m  OK  [0m] [    3.668871] random: crng init done
+Reached target System Time Synchronized.
+[    3.698597] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[    3.703778] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    3.704304] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+[[0;32m  OK  [0m] Reached target System Initialization.
+[[0;32m  OK  [0m] Reached target Basic System.
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
+[[0;32m  OK  [0m] Started Daily apt download activities.
+[[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Reached target Timers.
+         Starting getty on tty2-tty6 if dbus and logind are not available...
+         Starting System Logging Service...
+[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[    3.987611] audit: type=1107 audit(1673506921.330:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:kernel_t:s0 msg='avc:  denied  { start } for auid=n/a uid=0 gid=0 path="/lib/systemd/system/getty@.service" cmdline="/bin/systemctl --no-block start getty@tty2.service getty@tty3.service getty@tty4.service getty@tty5.service getty@tty6.service" scontext=system_u:system_r:kernel_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=service
+[    3.987611]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[[0;32m  OK  [0m] Started System Logging Service.
+[    4.015005] audit: type=1107 audit(1673506921.357:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:kernel_t:s0 msg='avc:  denied  { status } for auid=n/a uid=0 gid=0 path="/lib/systemd/system/getty@.service" cmdline="/bin/systemctl --no-block start getty@tty2.service getty@tty3.service getty@tty4.service getty@tty5.service getty@tty6.service" scontext=system_u:system_r:kernel_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=service
+[    4.015005]  exe="/lib/systemd/systemd" sauid=0 hostname=? addr=? terminal=?'
+[[0;32m  OK  [0m] Started getty on tty2-tty6 if dbus and logind are not available.
+         Starting Load/Save RF Kill Switch Status...
+[[0;32m  OK  [0m] Started Load/Save RF Kill Switch Status.
+[[0;32m  OK  [0m] Started Raise network interfaces.
+[[0;32m  OK  [0m] Reached target Network.
+         Starting OpenBSD Secure Shell server...
+         Starting Permit User Sessions...
+[[0;32m  OK  [0m] Reached target Network is Online.
+         Starting Daily apt download activities...
+[[0;32m  OK  [0m] Started Permit User Sessions.
+[[0;32m  OK  [0m] Started Getty on tty1.
+[[0;32m  OK  [0m] Started Getty on tty5.
+[[0;32m  OK  [0m] Started Getty on tty3.
+[[0;32m  OK  [0m] Started Getty on tty6.
+[[0;32m  OK  [0m] Started Getty on tty4.
+[[0;32m  OK  [0m] Started Getty on tty2.
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Reached target Login Prompts.
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
+[[0;32m  OK  [0m] Reached target Multi-User System.
+[[0;32m  OK  [0m] Reached target Graphical Interface.
+         Starting Update UTMP about System Runlevel Changes...
+[[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
+[[0;32m  OK  [0m] Started Daily apt download activities.
+         Starting Daily apt upgrade and clean activities...
+[[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
+
+Debian GNU/Linux 9 syzkaller ttyS0
+
+syzkaller login: [   10.204257] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4200
+[   10.205026] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4300
+[   10.206649] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4400
+[   10.207400] [*] FREE cache : kmalloc-32, FFFF8800677B7E70
+[   10.207412] [*] FREE cache : kmalloc-32, FFFF8800677B7E10
+[   10.207422] [*] FREE cache : kmalloc-32, FFFF8800677B7DE0
+[   10.207432] [*] FREE cache : kmalloc-32, FFFF8800677B7D80
+[   10.207443] [*] FREE cache : kmalloc-32, FFFF8800677B7D20
+[   10.210702] [*] ALLOC cache : anon_vma_chain, FFFF88006C3F4EA0
+[   10.211420] [*] FREE cache : kmalloc-32, FFFF8800677B7C60
+[   10.211432] [*] FREE cache : kmalloc-32, FFFF8800677B7570
+[   10.211443] [*] FREE cache : kmalloc-32, FFFF8800677B72A0
+[   10.211454] [*] FREE cache : kmalloc-32, FFFF8800677B70F0
+[   10.211474] [*] FREE cache : kmalloc-32, FFFF8800677B7A50
+[   10.211489] [*] FREE cache : kmalloc-32, FFFF8800677B7900
+[   10.215414] [*] ALLOC cache : anon_vma, FFFF88006779BAF0
+[   10.216140] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4500
+[   10.217126] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4600
+[   10.217967] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4700
+[   10.218829] [*] ALLOC cache : anon_vma_chain, FFFF88006714C120
+[   10.219758] [*] ALLOC cache : anon_vma, FFFF88006779B930
+[   10.220549] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4800
+[   10.221393] [*] FREE cache : kmalloc-32, FFFF8800677B73C0
+[   10.222172] [*] FREE cache : kmalloc-512, FFFF88006A638C80
+[   10.222952] [*] FREE cache : kmalloc-512, FFFF88006A638000
+[   10.223736] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4900
+[   10.224572] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4A00
+[   10.225410] [*] CTU from : FFFF880067683BC8, size : 320
+[   10.226172] [*] FREE cache : kmalloc-128, FFFF88006C16A240
+[   10.226950] [*] FREE cache : kmalloc-256, FFFF88006C16C780
+[   10.227782] [*] ALLOC cache : anon_vma_chain, FFFF88006714C420
+[   10.228619] [*] ALLOC cache : anon_vma, FFFF88006779BA10
+[   10.229425] [*] ALLOC cache : cred_jar, FFFF8800689C3400
+[   10.230202] [*] ALLOC cache : kmalloc-32, FFFF8800677B79C0
+[   10.230987] [*] ALLOC cache : names_cache, FFFF88006ACAC400
+[   10.231801] [*] ALLOC cache : cred_jar, FFFF8800689C3900
+[   10.232572] [*] ALLOC cache : kmalloc-32, FFFF8800677B77B0
+[   10.233371] [*] ALLOC cache : names_cache, FFFF88006ACAD500
+[   10.234189] [*] ALLOC cache : names_cache, FFFF88006ACAE600
+[   10.234982] [*] ALLOC cache : filp, FFFF880066B90500
+[   10.235705] [*] ALLOC cache : selinux_file_security, FFFF880068E4DE60
+[   10.236634] [*] CTU from : FFFF880064F87D68, size : 144
+[   10.237406] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4B00
+[   10.238259] [*] ALLOC cache : cred_jar, FFFF880069DEA300
+[   10.239033] [*] ALLOC cache : kmalloc-32, FFFF8800677B7840
+[   10.239811] [*] ALLOC cache : names_cache, FFFF880064B40000
+[   10.240623] [*] ALLOC cache : names_cache, FFFF880064B41100
+[   10.241431] [*] ALLOC cache : filp, FFFF880066B90A00
+[   10.242147] [*] ALLOC cache : selinux_file_security, FFFF880068E4DEA0
+[   10.243102] [*] CTU from : FFFF880064F87D68, size : 144
+[   10.243851] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4C00
+[   10.244690] [*] ALLOC cache : anon_vma_chain, FFFF88006714C4E0
+[   10.245530] [*] ALLOC cache : anon_vma, FFFF88006779B850
+[   10.246307] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4D00
+[   10.247162] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4E00
+[   10.247983] [*] ALLOC cache : vm_area_struct, FFFF88006BFF4F00
+[   10.248828] [*] ALLOC cache : vm_area_struct, FFFF880069CCD000
+[   10.249683] [*] ALLOC cache : vm_area_struct, FFFF880069CCD100
+[   10.250527] [*] ALLOC cache : anon_vma_chain, FFFF88006714C3C0
+[   10.251374] [*] ALLOC cache : anon_vma, FFFF88006779B8C0
+[   10.252157] [*] ALLOC cache : vm_area_struct, FFFF88006A337300
+[   10.253021] [*] ALLOC cache : cred_jar, FFFF880069DEA900
+[   10.253770] [*] ALLOC cache : kmalloc-32, FFFF8800677B7DB0
+[   10.254553] [*] ALLOC cache : names_cache, FFFF880064B42200
+[   10.255382] [*] ALLOC cache : names_cache, FFFF880064B43300
+[   10.256189] [*] ALLOC cache : filp, FFFF880066B90C80
+[   10.256899] [*] ALLOC cache : selinux_file_security, FFFF880068E4DEC0
+[   10.257843] [*] CTU from : FFFF880064F87D68, size : 144
+[   10.258611] [*] ALLOC cache : vm_area_struct, FFFF88006A337400
+[   10.259477] [*] ALLOC cache : vm_area_struct, FFFF88006A337500
+[   10.260316] [*] ALLOC cache : vm_area_struct, FFFF88006A337600
+[   10.261170] [*] ALLOC cache : vm_area_struct, FFFF88006A337700
+[   10.262020] [*] ALLOC cache : vm_area_struct, FFFF88006A337800
+[   10.262851] [*] ALLOC cache : anon_vma_chain, FFFF88006714C1E0
+[   10.263691] [*] ALLOC cache : anon_vma, FFFF88006779B770
+[   10.264480] [*] ALLOC cache : vm_area_struct, FFFF88006A337900
+[   10.265460] [*] ALLOC cache : vm_area_struct, FFFF88006A337A00
+[   10.266310] [*] ALLOC cache : anon_vma_chain, FFFF88006714C240
+[   10.267183] [*] ALLOC cache : vm_area_struct, FFFF88006A337B00
+[   10.268026] [*] ALLOC cache : anon_vma_chain, FFFF88006714C2A0
+[   10.268866] [*] ALLOC cache : vm_area_struct, FFFF88006A337C00
+[   10.269708] [*] ALLOC cache : anon_vma_chain, FFFF88006714C360
+[   10.270556] [*] ALLOC cache : vm_area_struct, FFFF88006A337D00
+[   10.271405] [*] ALLOC cache : anon_vma_chain, FFFF88006714CA80
+[   10.272280] [*] ALLOC cache : anon_vma_chain, FFFF88006714C900
+[   10.273126] [*] ALLOC cache : anon_vma, FFFF88006779BA80
+[   10.273901] [*] CTU from : FFFF880064F87EF0, size : 16
+[   10.274660] [*] ALLOC cache : anon_vma_chain, FFFF88006714C180
+[   10.275507] [*] ALLOC cache : anon_vma, FFFF88006779B7E0
+[   10.276313] [*] ALLOC cache : names_cache, FFFF880064B44400
+[   10.277118] [*] ALLOC cache : filp, FFFF880066B908C0
+[   10.277818] [*] ALLOC cache : selinux_file_security, FFFF880068E4DF40
+[   10.278783] [*] ALLOC cache : avc_node, FFFF880069A09068
+[   10.279572] [*] ALLOC cache : kmalloc-8, FFFF88006BFD23A8
+[   10.280357] 
+[   10.280357] 
+[   10.280788] [*] FREE cache : kmalloc-8, FFFF88006BFD23A8
+[   10.281558] [*] ALLOC cache : kmalloc-32, FFFF8800677B7EA0
+[   10.282353] [-] Debugging Start
+[   10.282828] [*] FREE cache : kmalloc-32, FFFF8800677B7EA0
+[   10.283630] [*] ALLOC cache : vm_area_struct, FFFF88006A337E00
+[   10.284486] [*] ALLOC cache : anon_vma_chain, FFFF88006714C300
+[   10.285333] [*] ALLOC cache : anon_vma, FFFF88006779B070
+[   10.286109] [*] ALLOC cache : names_cache, FFFF880064B45500
+[   10.286907] [*] ALLOC cache : filp, FFFF88006AFE23C0
+[   10.287632] [*] ALLOC cache : selinux_file_security, FFFF880068E4DEE0
+[   10.288575] [*] ALLOC cache : kmalloc-64, FFFF88006BB4CCC0
+[   10.289374] [-] r[0] = syz_open_dev(0x20000000, 0, 0);
+[   10.290130] [*] FREE cache : kmalloc-64, FFFF88006BB4CCC0
+[   10.290913] [*] ALLOC cache : names_cache, FFFF880064B46600
+[   10.291723] [*] ALLOC cache : filp, FFFF88006A340DC0
+[   10.292446] [*] ALLOC cache : selinux_file_security, FFFF880068E4DF60
+[   10.293402] [*] ALLOC cache : avc_node, FFFF880069A090D0
+[   10.294205] [*] ALLOC cache : kmalloc-8192, FFFF88006A5A8000
+[   10.295033] [*] ALLOC cache : kmalloc-1024, FFFF88006A44FA80
+[   10.295852] [*] ALLOC cache : names_cache, FFFF8800694A9100
+[   10.296657] [*] ALLOC cache : filp, FFFF88006A340C80
+[   10.297377] [*] ALLOC cache : selinux_file_security, FFFF880068E4D360
+[   10.298316] [*] ALLOC cache : kmalloc-64, FFFF88006BB4CD80
+[   10.299116] [-] syscall(__NR_ioctl, r[0], 0xc0481273, 0x20001f8a);
+[   10.299988] [*] FREE cache : kmalloc-64, FFFF88006BB4CD80
+[   10.300793] [*] ALLOC cache : kmalloc-128, FFFF88006C16A180
+[   10.301672] [*] ALLOC cache : avc_node, FFFF880069A09138
+[   10.302451] [*] ALLOC cache : dentry, FFFF8800679D0100
+[   10.303216] [*] ALLOC cache : dentry, FFFF8800644D1900
+[   10.303952] [*] ALLOC cache : inode_cache, FFFF88006457C000
+[   10.304764] [*] ALLOC cache : selinux_inode_security, FFFF88006A0B1850
+[   10.305721] [*] ALLOC cache : dentry, FFFF8800644D1800
+[   10.306473] [*] ALLOC cache : inode_cache, FFFF88006457C580
+[   10.307290] [*] ALLOC cache : selinux_inode_security, FFFF88006A0B1888
+[   10.308237] [*] ALLOC cache : dentry, FFFF8800644D1700
+[   10.308976] [*] ALLOC cache : inode_cache, FFFF88006457EEC0
+[   10.309783] [*] ALLOC cache : selinux_inode_security, FFFF88006A0B1930
+[   10.310737] [*] ALLOC cache : kmalloc-512, FFFF88006A638A00
+[   10.311556] [*] FREE cache : kmalloc-512, FFFF88006A638A00
+[   10.312345] [X] Double Free Cache Name : kmalloc-512, PTR : FFFF88006A638A00
+[   10.313351] [*] FREE cache : kmalloc-512, FFFF88006A638A00
+[   10.314161] [*] FREE cache : kmalloc-128, FFFF88006C16A180
+[   10.314943] [*] ALLOC cache : names_cache, FFFF8800694A8000
+[   10.315753] [*] ALLOC cache : filp, FFFF88006A340A00
+[   10.316467] [*] ALLOC cache : selinux_file_security, FFFF880068E4D3A0
+[   10.317396] [*] ALLOC cache : kmalloc-16, FFFF88006B84EBA0
+[   10.318172] [-] close(4);
+[   10.318553] [*] FREE cache : kmalloc-16, FFFF88006B84EBA0
+[   10.319355] [*] ALLOC cache : names_cache, FFFF8800694AA200
+[   10.320154] [*] ALLOC cache : filp, FFFF88006A238A00
+[   10.320854] [*] ALLOC cache : selinux_file_security, FFFF880068E4D440
+[   10.321780] [*] ALLOC cache : kmalloc-32, FFFF8800677B78A0
+[   10.322569] [-] Debugging End
+[   10.322997] [*] FREE cache : kmalloc-32, FFFF8800677B78A0
+[   10.324076] [*] FREE cache : kmalloc-1024, FFFF88006A4E2D00
+[   10.325057] [*] FREE cache : kmalloc-192, FFFF880066B9E300
+[   10.325866] [*] ALLOC cache : sigqueue, FFFF8800675B0EE0
+qemu-system-x86_64: terminating on signal 15 from pid 688 ()

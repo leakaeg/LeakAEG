@@ -1,0 +1,4 @@
+Cache : kmalloc-256, file : kmalloc_256.h
+Cache : kmalloc-512, file : kmalloc_512.h
+Cache : kmalloc-2048, file : kmalloc_2048.h
+Cache : kmalloc-8192, file : kmalloc_8192.h

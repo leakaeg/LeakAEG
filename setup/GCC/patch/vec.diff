@@ -1,0 +1,11 @@
+--- gcc-7.5.0/gcc/vec.h	2017-01-01 12:07:43.905435000 +0000
++++ ./patch-7.5.0/gcc/vec.h	2020-07-25 11:50:18.495709614 +0000
+@@ -304,7 +304,7 @@
+ 
+   if (GATHER_STATISTICS)
+     v->m_vecpfx.release_overhead (v, v->allocated (), true);
+-  ::free (v);
++  //::free (v);
+   v = NULL;
+ }
+ 

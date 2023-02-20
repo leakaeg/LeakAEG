@@ -1,0 +1,7 @@
+[   10.289374] [-] r[0] = syz_open_dev(0x20000000, 0, 0);
+[   10.299116] [-] syscall(__NR_ioctl, r[0], 0xc0481273, 0x20001f8a);
+[   10.310737] [*] ALLOC cache : kmalloc-512, FFFF88006A638A00
+[   10.311556] [*] FREE cache : kmalloc-512, FFFF88006A638A00
+[   10.312345] [X] Double Free Cache Name : kmalloc-512, PTR : FFFF88006A638A00
+[   10.313351] [*] FREE cache : kmalloc-512, FFFF88006A638A00
+[   10.318172] [-] close(4);
